@@ -1,12 +1,23 @@
 import React from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-const Ring = () => {
+
+import RingCard from "../components/RingCard";
+import RingData from "../CardData/RingData";
+const Ring = (props) => {
   return (
-    <div>
-      Ring <Header />
-      <Footer />
-    </div>
+    <>
+      <div className="cardData">
+        {RingData.map((value, key) => {
+          return (
+            <RingCard
+              imgsrc={value.imgsrc}
+              id={value.id}
+              description={value.description}
+              price={value.price} 
+            />
+          );
+        })}
+      </div>
+    </>
   );
 };
 

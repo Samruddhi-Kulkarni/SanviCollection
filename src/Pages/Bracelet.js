@@ -1,12 +1,23 @@
 import React from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-const Bracelet = () => {
+
+import BraceletCard from "../components/BraceletCard";
+import BraceletData from "../CardData/BraceletData";
+const Bracelet = (props) => {
   return (
-    <div>
-      Bracelet <Header />
-      <Footer />
-    </div>
+    <>
+      <div className="cardData">
+        {BraceletData.map((value, key) => {
+          return (
+            <BraceletCard
+              imgsrc={value.imgsrc}
+              id={value.id}
+              description={value.description}
+              price={value.price} 
+            />
+          );
+        })}
+      </div>
+    </>
   );
 };
 

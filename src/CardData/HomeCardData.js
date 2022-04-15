@@ -1,7 +1,7 @@
-import necklace from "../Homeimages/necklace.jpg";
-import earring from "../Homeimages/earring.jpg";
-import bracelet from "../Homeimages/bracelet.jpg";
-import ring from "../Homeimages/ring.jpg";
+import necklace from "../Images/Homeimages/necklace.jpg";
+import earring from "../Images/Homeimages/earring.jpg";
+import bracelet from "../Images/Homeimages/bracelet.jpg";
+import ring from "../Images/Homeimages/ring.jpg";
 
 const HomeCardData = [
   {

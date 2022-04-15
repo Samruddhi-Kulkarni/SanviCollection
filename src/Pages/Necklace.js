@@ -1,12 +1,24 @@
 import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-const Necklace = () => {
+import NecklaceData from "../CardData/NecklaceData";
+import NecklaceCard from "../components/NecklaceCard";
+const Necklace = (props) => {
   return (
-    <div>
-      Necklace <Header />
-      <Footer />
-    </div>
+    <>
+      <div className="cardData">
+        {NecklaceData.map((value, key) => {
+          return (
+            <NecklaceCard
+              imgsrc={value.imgsrc}
+              id={value.id}
+              description={value.description}
+              price={value.price}
+            />
+          );
+        })}
+      </div>
+    </>
   );
 };
 

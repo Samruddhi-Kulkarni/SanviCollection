@@ -19,9 +19,7 @@ const HomeCard = (props) => {
             </p>
           </div>
         </div> 
-      </div>
-
-     
+      </div>     
     </>
   );
 };

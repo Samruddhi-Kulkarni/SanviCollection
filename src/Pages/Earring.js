@@ -1,12 +1,23 @@
 import React from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-const Earring = () => {
+
+import EarringCard from "../components/EarringCard";
+import EarringData from "../CardData/EarringData";
+const Earring = (props) => {
   return (
-    <div>
-      Earring <Header />
-      <Footer />
-    </div>
+    <>
+      <div className="cardData">
+        {EarringData.map((value, key) => {
+          return (
+            <EarringCard
+              imgsrc={value.imgsrc}
+              id={value.id}
+              description={value.description}
+              price={value.price}
+            />
+          );
+        })}
+      </div>
+    </>
   );
 };
 

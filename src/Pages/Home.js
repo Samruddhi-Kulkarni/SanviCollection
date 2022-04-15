@@ -2,7 +2,7 @@ import React from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Homecard from "../components/HomeCard";
-import HomeCardData from "../HomeCardData/HomeCardData";
+import HomeCardData from "../CardData/HomeCardData";
 
 const Home = () => {
   
